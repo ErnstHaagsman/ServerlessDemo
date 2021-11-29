@@ -1,13 +1,14 @@
 from pymongo import MongoClient
 
+CXN = "mongodb://demo:hunter2@mongo.guestbook.teamcity.com/myDB?retryWrites=true&w=majority"
+
 
 class MongoDBConnection:
     def __init__(self):
         self.connection = None
 
     def __enter__(self):
-        self.connection = MongoClient(
-            "mongodb+srv://mukulmantosh:9fRIqCFZ1hA9RLE4@mydb.6q0tq.mongodb.net/myDB?retryWrites=true&w=majority")
+        self.connection = MongoClient(CXN)
 
         return self
 

@@ -6,8 +6,7 @@ class MongoDBConnection:
         self.connection = None
 
     def __enter__(self):
-        self.connection = MongoClient(
-            "mongodb+srv://mukulmantosh:9fRIqCFZ1hA9RLE4@mydb.6q0tq.mongodb.net/myDB?retryWrites=true&w=majority")
+        self.connection = MongoClient(CXN)
 
         return self
 

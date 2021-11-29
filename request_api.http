@@ -1,0 +1,9 @@
+POST https://7ahlvvh5f1.execute-api.us-west-2.amazonaws.com/Prod/user/
+Content-Type: application/json
+
+{
+"first_name": "Fred",
+"last_name": "Flinstone",
+"email": "foo@x.com",
+"password": "123"
+}
