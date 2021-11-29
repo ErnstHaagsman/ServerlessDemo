@@ -10,6 +10,14 @@ Globals:
   Function:
     Timeout: 30
     MemorySize: 2048
+    VpcConfig:
+      SecurityGroupIds:
+        - sg-083d4350bc03cc32f
+      SubnetIds:
+        - subnet-09f4715b693a6f024
+        - subnet-06be857dd87f8cdf6
+        - subnet-0fcfb03f567d03ac0
+        - subnet-05c6122b02950ed37
     Environment:
       Variables:
         SECRET_KEY: secret-info
